@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -7,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Link from '@material-ui/core/Link';
-import router from '../../../../routes/api/user'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +33,7 @@ class Banner extends Component {
   logout(event) {
     event.preventDefault()
     console.log('logging out')
-    router.post('/logout').then(response => {
+    axios.post('/logout').then(response => {
       console.log(response.data)
       if (response.status === 200) {
         this.props.updateUser({

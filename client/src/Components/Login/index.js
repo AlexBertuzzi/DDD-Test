@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-//import axios from 'axios';
+import axios from 'axios';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,7 +12,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import router from '../../../../routes/api/user';
 
 function Copyright() {
   return (
@@ -71,7 +70,7 @@ class Login extends Component {
     event.preventDefault()
     console.log('handleSubmit')
     
-    router
+    axios
     .post('/login', {
       name: this.state.name,
       password: this.state.password
