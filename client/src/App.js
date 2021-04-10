@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   getUser() {
-    axios.get('/user/').then(response => {
+    axios.get('/').then(response => {
       console.log('Get user response: ')
       console.log(response.data)
       if (response.data.user) {
