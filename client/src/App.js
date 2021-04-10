@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import axios from 'axios';
+//import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import SignUp from "./Components/SignUp";
-import Login from "./Components/Login"
+import Login from "./Components/Login";
 import Banner from "./Components/Banner";
 import Footer from "./Components/Footer";
 import CreateMeal from "./Components/CreateMeal";
 import IngredientList from "./Components/Foods";
 import MealCard from "./Components/MealCard";
 import AddFood from "./Components/AddFood";
-import SideBar from "./Components/SideBar"
+import SideBar from "./Components/SideBar";
+import router from '../../routes/api/user';
 
 class App extends Component {
   constructor() {
@@ -33,7 +34,7 @@ class App extends Component {
   }
 
   getUser() {
-    axios.get('/').then(response => {
+    router.get('/').then(response => {
       console.log('Get user response: ')
       console.log(response.data)
       if (response.data.user) {

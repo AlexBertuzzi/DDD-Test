@@ -10,7 +10,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import axios from 'axios';
+//import axios from 'axios';
+import router from '../../../../routes/api/user'
 
 function Copyright() {
   return (
@@ -69,7 +70,7 @@ class SignUp extends Component {
 		event.preventDefault()
     
 		//request to server to add a new name/password
-		axios.post('/', {
+		router.post('/', {
       name: this.state.name,
       email: this.state.email,
 			password: this.state.password
