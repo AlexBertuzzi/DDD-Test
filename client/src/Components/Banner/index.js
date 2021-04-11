@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -21,11 +21,27 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
   },
+  margin: {
+    margin: "5px"
+  }
 }));
 
 
 function Banner () {
  const classes = useStyles();
+ const [name, setName] = useState([]);
+
+ useEffect(() => {
+   loadName()
+ }, [])
+
+ function loadName () {
+   axios.get('/api/user').then(response => {
+     console.log("look at this")
+     console.log(response.data)
+     setName(response.data.user.name)
+   })
+ }
   
   function logout(event) {
     event.preventDefault()
@@ -33,10 +49,6 @@ function Banner () {
     axios.post('/api/user/logout').then(response => {
       console.log(response.data)
       if (response.status === 200) {
-        this.props.updateUser({
-          loggedIn: false,
-          name: null
-        })
         window.location.href="/login"
       }
     }).catch(error => {
@@ -63,9 +75,9 @@ function Banner () {
                 href="/login"
               >
                 <Typography>
-                name goes here
+                {name}
                 </Typography>
-                <AccountCircle />
+                <AccountCircle className={classes.margin}/>
                 <Typography>
                 Log Out 
                 </Typography>

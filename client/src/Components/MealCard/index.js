@@ -97,8 +97,8 @@ if (meal.length > 0){
         <Card className={classes.card}>
             <CardContent>
             <Typography className={classes.heading}>
-                <IconButton color="secondary">
-                <DeleteForeverIcon button onClick={() => deleteMeal(meal._id)}/>
+                <IconButton color="secondary" onClick={() => deleteMeal(meal._id)}>
+                <DeleteForeverIcon button />
                 </IconButton>
                 {meal.title}
             </Typography>
