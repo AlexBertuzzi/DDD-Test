@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -24,34 +24,31 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-class Banner extends Component {
-  constructor() {
-    super()
-    this.logout = this.logout.bind(this)
-  }
+function Banner () {
+ const classes = useStyles();
   
-  logout(event) {
+  function logout(event) {
     event.preventDefault()
     console.log('logging out')
-    axios.post('/logout').then(response => {
+    axios.post('/api/user/logout').then(response => {
       console.log(response.data)
       if (response.status === 200) {
         this.props.updateUser({
           loggedIn: false,
           name: null
         })
+        window.location.href="/login"
       }
     }).catch(error => {
       console.log('Logout error')
     })
   }
   
-  render(){
     return (
-    <div className={useStyles.root}>
-      <AppBar position="fixed" className={useStyles.appBar}>
+    <div className={classes.root}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          <Typography variant="h6" className={useStyles.title} link="/viewMeals">
+          <Typography variant="h6" className={classes.title} link="/viewMeals">
               <Link href="/viewMeals" color="inherit" >
                 Daily Diet Directory
               </Link>
@@ -62,11 +59,11 @@ class Banner extends Component {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 color="inherit"
-                onClick={this.logout}
+                onClick={logout}
                 href="/login"
               >
                 <Typography>
-                {this.state.name}
+                name goes here
                 </Typography>
                 <AccountCircle />
                 <Typography>
@@ -79,6 +76,6 @@ class Banner extends Component {
     </div>
   );
 }
-}
+
 export default Banner;
 

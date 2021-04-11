@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -46,71 +45,62 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function Login () {
+  const classes = useStyles();
+  const [name, setName] = useState({});
+  const [password, setPassword] = useState({});
 
-class Login extends Component {
-  constructor() {
-    super()
-    this.state = {
-      name: '',
-      password: '',
-      redirectTo: null
-    }
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleChange = this.handleChange.bind(this)
-    
+  function handleName(event) {
+    setName(event.target.value)
+  }
+
+  function handlePassword(event) {
+    setPassword(event.target.value)
   }
   
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
-  
-  handleSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault()
     console.log('handleSubmit')
     
     axios
-    .post('/login', {
-      name: this.state.name,
-      password: this.state.password
-    })
+    .post('/api/user/login', {
+      name: name,
+      password: password
+    },
+    )
     .then(response => {
+      console.log('you made it this far')
       console.log('login response: ')
       console.log(response)
       if (response.status === 200) {
         // update App.js state
-        this.props.updateUser({
-          loggedIn: true,
-          name: response.data.name
-        })
+        // this.props.updateUser({
+        //   loggedIn: true,
+        //   name: response.data.name
+        // })
         // update the state to redirect to home
-        this.setState({
-          redirectTo: '/viewMeals'
-        })
+        window.location.href="/viewMeals"
+    
       }
     }).catch(error => {
       console.log('login error: ')
       console.log(error);
-      
     })
   }
   
-  render() {
-  if (this.state.redirectTo) {
-    return <Redirect to={{ pathname: this.state.redirectTo }} />
-  } else {
+  
+ 
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
-      <div className={useStyles.paper}>
-        <Avatar className={useStyles.avatar}>
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
           Login
         </Typography>
-        <form className={useStyles.form} noValidate>
+        <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
             margin="normal"
@@ -120,8 +110,7 @@ class Login extends Component {
             label="User Name"
             name="name"
             autoFocus
-            value={this.state.name}
-            onChange={this.handleChange}
+            onChange={handleName}
           />
           <TextField
             variant="outlined"
@@ -132,16 +121,15 @@ class Login extends Component {
             label="Password"
             type="password"
             id="password"
-            value={this.state.password}
-            onChange={this.handleChange}
+            onChange={handlePassword}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
-            className={useStyles.submit}
-            onClick={this.handleSubmit}
+            className={classes.submit}
+            onClick={handleSubmit}
           >
         Login
           </Button>
@@ -158,8 +146,8 @@ class Login extends Component {
         <Copyright />
       </Box>
     </Container>
-  )};
+  );
 }
-}
+
 
 export default Login;

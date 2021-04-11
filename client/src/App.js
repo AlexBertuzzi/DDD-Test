@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import axios from 'axios';
+import React from "react";
+//import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login"
@@ -11,49 +11,50 @@ import MealCard from "./Components/MealCard";
 import AddFood from "./Components/AddFood";
 import SideBar from "./Components/SideBar"
 
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      loggedIn: false,
-      name: null
-    }
+// class App extends Component {
+//   constructor() {
+//     super()
+//     this.state = {
+//       loggedIn: false,
+//       name: null
+//     }
 
-    this.getUser = this.getUser.bind(this)
-    this.componentDidMount = this.componentDidMount.bind(this)
-    this.updateUser = this.updateUser.bind(this)
-  }
+//     this.getUser = this.getUser.bind(this)
+//     this.componentDidMount = this.componentDidMount.bind(this)
+//     this.updateUser = this.updateUser.bind(this)
+//   }
 
-  componentDidMount() {
-    this.getUser()
-  }
+//   componentDidMount() {
+//     this.getUser()
+//   }
 
-  updateUser (userObject) {
-    this.setState(userObject)
-  }
+//   updateUser (userObject) {
+//     this.setState(userObject)
+//   }
 
-  getUser() {
-    axios.get('/api/user').then(response => {
-      console.log('Get user response: ')
-      console.log(response.data)
-      if (response.data.user) {
-        console.log('Get User: There is a user saved in the server session: ')
+//   getUser() {
+//     axios.get('/api/user').then(response => {
+//       console.log('Get user response: ')
+//       console.log(response.data)
+//       if (response.data.user) {
+//         console.log('Get User: There is a user saved in the server session: ')
 
-        this.setState({
-          loggedIn: true,
-          name: response.data.user.name
-        })
-      } else {
-        console.log('Get user: no user');
-        this.setState({
-          loggedIn: false,
-          name: null
-        })
-      }
-    })
-  }
+//         this.setState({
+//           loggedIn: true,
+//           name: response.data.user.name
+//         })
+//       } else {
+//         console.log('Get user: no user');
+//         this.setState({
+//           loggedIn: false,
+//           name: null
+//         })
+//       }
+//     })
+//   }
 
- render() {
+//  render() {
+  function App () {
   return (
       <Router>
           <Switch>
@@ -61,28 +62,28 @@ class App extends Component {
                   <SignUp />
               </Route>
               <Route exact path={["/login"]}>
-                  <Login updateUser={this.updateUser}/>
+                  <Login  />
               </Route>
               <Route exact path="/ingredientList">
-                <Banner updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+                <Banner />
                 <SideBar />
                 <IngredientList />
                 <Footer />
               </Route>
               <Route exact path="/createIngredient">
-                <Banner updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+                <Banner />
                 <SideBar />
                 <AddFood />
                 <Footer />
               </Route>
               <Route exact path="/createMeal">
-                <Banner updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+                <Banner />
                 <SideBar />
                 <CreateMeal />
                 <Footer />
               </Route>
               <Route exact path="/viewMeals">
-                <Banner updateUser={this.updateUser} loggedIn={this.state.loggedIn}/>
+                <Banner />
                 <SideBar />
                 <MealCard />
                 <Footer />
@@ -91,6 +92,6 @@ class App extends Component {
       </Router>
   )
 }
-}
+
 
 export default App;

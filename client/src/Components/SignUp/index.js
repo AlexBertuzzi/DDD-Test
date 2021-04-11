@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -46,41 +46,38 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-class SignUp extends Component {
-  constructor() {
-    super()
-		this.state = {
-      name: '',
-      email: '',
-			password: '',
-      
-		}
-		this.handleSubmit = this.handleSubmit.bind(this)
-		this.handleChange = this.handleChange.bind(this)
-	}
-	handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-		})
-	}
-	handleSubmit(event) {
+function SignUp () {
+  const classes= useStyles();
+  const [name, setName] = useState({});
+  const [email, setEmail] = useState({});
+  const [password, setPassword] = useState({});
+
+  function handleName(event) {
+    setName(event.target.value)
+  }
+  function handleEmail(event) {
+    setEmail(event.target.value)
+  }
+  function handlePassword(event) {
+    setPassword(event.target.value)
+  }
+  
+	function handleSubmit(event) {
+    event.preventDefault()
     console.log('sign-up handleSubmit, name: ')
-		console.log(this.state.name)
-		event.preventDefault()
+		console.log(name)
     
 		//request to server to add a new name/password
 		axios.post('/api/user', {
-      name: this.state.name,
-      email: this.state.email,
-			password: this.state.password
+      name: name,
+      email: email,
+			password: password
 		})
     .then(response => {
       console.log(response)
       if (!response.data.errmsg) {
         console.log('successful signup')
-        this.setState({ //redirect to login page
-          redirectTo: '/login'
-        })
+        window.location.href="/login"
       } else {
         console.log('name already taken')
       }
@@ -92,18 +89,17 @@ class SignUp extends Component {
 	}
   
   
-  render() {
-  return (
+    return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
-      <div className={useStyles.paper}>
-        <Avatar className={useStyles.avatar}>
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign Up
         </Typography>
-        <form className={useStyles.form} noValidate>
+        <form className={classes.form} noValidate>
         <TextField
             variant="outlined"
             margin="normal"
@@ -112,9 +108,8 @@ class SignUp extends Component {
             id="name"
             label="User Name"
             name="name"
-            value={this.state.name}
             autoFocus
-            onChange={this.handleChange}
+            onChange={handleName}
           />
           <TextField
             variant="outlined"
@@ -124,8 +119,7 @@ class SignUp extends Component {
             id="email"
             label="Email Address"
             name="email"
-            value={this.state.email}
-            onChange={this.handleChange}
+            onChange={handleEmail}
           />
           <TextField
             variant="outlined"
@@ -136,16 +130,15 @@ class SignUp extends Component {
             label="Password"
             type="password"
             id="password"
-            value={this.state.password}
-            onChange={this.handleChange}
+            onChange={handlePassword}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
-            onClilck={this.handleSubmit}
-            className={useStyles.submit}
+            onClick={handleSubmit}
+            className={classes.submit}
             
           >
             Sign Up
@@ -164,7 +157,6 @@ class SignUp extends Component {
       </Box>
     </Container>
   );
-}
 }
 
 export default SignUp
