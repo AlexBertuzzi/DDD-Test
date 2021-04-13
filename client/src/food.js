@@ -2,6 +2,7 @@ const Food =[
         {
             name:"Avocado Oil",
             type:"Oil",
+            amount:100,
             calories:884,
             protein:0,
             carbs:0,
@@ -10,6 +11,7 @@ const Food =[
         {
             name:"Butter",
             type:"Oil",
+            amount:100,
             calories:717,
             protein:0,
             carbs:0,
@@ -18,6 +20,7 @@ const Food =[
         {
             name:"Canola Oil",
             type:"Oil",
+            amount:100,
             calories:884,
             protein:0,
             carbs:0,
@@ -26,6 +29,7 @@ const Food =[
         {
             name:"Coconut Oil",
             type:"Oil",
+            amount:100,
             calories:862,
             protein:0,
             carbs:0,
@@ -34,6 +38,7 @@ const Food =[
         {
             name:"Grapeseed Oil",
             type:"Oil",
+            amount:100,
             calories:884,
             protein:0,
             carbs:0,
@@ -42,6 +47,7 @@ const Food =[
         {
             name:"Olive Oil",
             type:"Oil",
+            amount:100,
             calories:884,
             protein:0,
             carbs:0,
@@ -50,6 +56,7 @@ const Food =[
         {
             name:"Walnut Oil",
             type:"Oil",
+            amount:100,
             calories:884,
             protein:0,
             carbs:0,
@@ -58,6 +65,7 @@ const Food =[
         {
             name:"Apple",
             type:"Fruit",
+            amount:100,
             calories:52,
             protein:0,
             carbs:13,
@@ -66,6 +74,7 @@ const Food =[
         {
             name:"Apricot",
             type:"Fruit",
+            amount:100,
             calories:48,
             protein:1,
             carbs:11,
@@ -74,6 +83,7 @@ const Food =[
         {
             name:"Avocado",
             type:"Fruit",
+            amount:100,
             calories:160,
             protein:2,
             carbs:8,
@@ -82,6 +92,7 @@ const Food =[
         {
             name:"Acai",
             type:"Fruit",
+            amount:100,
             calories:80,
             protein:2,
             carbs:4,
@@ -90,6 +101,7 @@ const Food =[
         {
             name:"Banana",
             type:"Fruit",
+            amount:100,
             calories:89,
             protein:1,
             carbs:22,
@@ -98,6 +110,7 @@ const Food =[
         {
             name:"Blueberry",
             type:"Fruit",
+            amount:100,
             calories:57,
             protein:0,
             carbs:14,
@@ -106,6 +119,7 @@ const Food =[
         {
             name:"Blood Orange",
             type:"Fruit",
+            amount:100,
             calories:47,
             protein:0,
             carbs:11,
@@ -114,6 +128,7 @@ const Food =[
         {
             name:"Cantaloupe",
             type:"Fruit",
+            amount:100,
             calories:34,
             protein:0,
             carbs:8,
@@ -122,6 +137,7 @@ const Food =[
         {
             name:"Cranberry",
             type:"Fruit",
+            amount:100,
             calories:46,
             protein:0,
             carbs:12,
@@ -130,6 +146,7 @@ const Food =[
         {
             name:"Cherry",
             type:"Fruit",
+            amount:100,
             calories:63,
             protein:1,
             carbs:16,
@@ -138,6 +155,7 @@ const Food =[
         {
             name:"Cucumber",
             type:"Fruit",
+            amount:100,
             calories:15,
             protein:0,
             carbs:3,
@@ -146,6 +164,7 @@ const Food =[
         {
             name:"Date",
             type:"Fruit",
+            amount:100,
             calories:277,
             protein:1,
             carbs:74,
@@ -154,6 +173,7 @@ const Food =[
         {
             name:"Durian",
             type:"Fruit",
+            amount:100,
             calories:147,
             protein:1,
             carbs:27,
@@ -162,6 +182,7 @@ const Food =[
         {
             name:"Elderberry",
             type:"Fruit",
+            amount:100,
             calories:73,
             protein:0,
             carbs:18,
@@ -170,6 +191,7 @@ const Food =[
         {
             name:"Grapefruit",
             type:"Fruit",
+            amount:100,
             calories:33,
             protein:0,
             carbs:8,
@@ -178,6 +200,7 @@ const Food =[
         {
             name:"Grapes",
             type:"Fruit",
+            amount:100,
             calories:69,
             protein:0,
             carbs:18,
@@ -186,6 +209,7 @@ const Food =[
         {
             name:"Guava",
             type:"Fruit",
+            amount:100,
             calories:68,
             protein:2,
             carbs:14,
@@ -194,6 +218,7 @@ const Food =[
         {
             name:"Honeydew",
             type:"Fruit",
+            amount:100,
             calories:36,
             protein:0,
             carbs:9,
@@ -202,6 +227,7 @@ const Food =[
         {
             name:"Jackfruit",
             type:"Fruit",
+            amount:100,
             calories:95,
             protein:1,
             carbs:23,
@@ -210,6 +236,7 @@ const Food =[
         {
             name:"Kiwi",
             type:"Fruit",
+            amount:100,
             calories:61,
             protein:1,
             carbs:14,
@@ -218,6 +245,7 @@ const Food =[
         {
             name:"Kumquat",
             type:"Fruit",
+            amount:100,
             calories:71,
             protein:1,
             carbs:15,
@@ -226,6 +254,7 @@ const Food =[
         {
             name:"Lemon",
             type:"Fruit",
+            amount:100,
             calories:29,
             protein:1,
             carbs:9,
@@ -234,6 +263,7 @@ const Food =[
         {
             name:"Lime",
             type:"Fruit",
+            amount:100,
             calories:30,
             protein:0,
             carbs:10,
@@ -242,6 +272,7 @@ const Food =[
         {
             name:"Lingonberry",
             type:"Fruit",
+            amount:100,
             calories:50,
             protein:1,
             carbs:12,
@@ -250,6 +281,7 @@ const Food =[
         {
             name:"Loganberry",
             type:"Fruit",
+            amount:100,
             calories:55,
             protein:1,
             carbs:13,
@@ -258,6 +290,7 @@ const Food =[
         {
             name:"Loquat",
             type:"Fruit",
+            amount:100,
             calories:47,
             protein:0,
             carbs:12,
@@ -266,6 +299,7 @@ const Food =[
         {
             name:"Lychee",
             type:"Fruit",
+            amount:100,
             calories:66,
             protein:0,
             carbs:16,
@@ -274,6 +308,7 @@ const Food =[
         {
             name:"Mango",
             type:"Fruit",
+            amount:100,
             calories:60,
             protein:0,
             carbs:14,
@@ -282,6 +317,7 @@ const Food =[
         {
             name:"Nectarine",
             type:"Fruit",
+            amount:100,
             calories:44,
             protein:1,
             carbs:10,
@@ -290,6 +326,7 @@ const Food =[
         {
             name:"Orange",
             type:"Fruit",
+            amount:100,
             calories:47,
             protein:0,
             carbs:11,
@@ -298,6 +335,7 @@ const Food =[
         {
             name:"Papaya",
             type:"Fruit",
+            amount:100,
             calories:43,
             protein:0,
             carbs:10,
@@ -306,6 +344,7 @@ const Food =[
         {
             name:"Passion Fruit",
             type:"Fruit",
+            amount:100,
             calories:97,
             protein:2,
             carbs:23,
@@ -314,6 +353,7 @@ const Food =[
         {
             name:"Peach",
             type:"Fruit",
+            amount:100,
             calories:39,
             protein:0,
             carbs:9,
@@ -322,6 +362,7 @@ const Food =[
         {
             name:"Pear",
             type:"Fruit",
+            amount:100,
             calories:57,
             protein:0,
             carbs:15,
@@ -330,6 +371,7 @@ const Food =[
         {
             name:"Persimmon",
             type:"Fruit",
+            amount:100,
             calories:127,
             protein:0,
             carbs:33,
@@ -338,6 +380,7 @@ const Food =[
         {
             name:"Pineapple",
             type:"Fruit",
+            amount:100,
             calories:50,
             protein:0,
             carbs:13,
@@ -346,6 +389,7 @@ const Food =[
         {
             name:"Plum",
             type:"Fruit",
+            amount:100,
             calories:46,
             protein:0,
             carbs:11,
@@ -354,6 +398,7 @@ const Food =[
         {
             name:"Pomegranate",
             type:"Fruit",
+            amount:100,
             calories:83,
             protein:1,
             carbs:18,
@@ -362,6 +407,7 @@ const Food =[
         {
             name:"Raspberry",
             type:"Fruit",
+            amount:100,
             calories:52,
             protein:1,
             carbs:11,
@@ -370,6 +416,7 @@ const Food =[
         {
             name:"Star Fruit",
             type:"Fruit",
+            amount:100,
             calories:31,
             protein:1,
             carbs:6,
@@ -378,6 +425,7 @@ const Food =[
         {
             name:"Strawberry",
             type:"Fruit",
+            amount:100,
             calories:32,
             protein:0,
             carbs:7,
@@ -386,6 +434,7 @@ const Food =[
         {
             name:"Tamarind",
             type:"Fruit",
+            amount:100,
             calories:239,
             protein:2,
             carbs:62,
@@ -394,6 +443,7 @@ const Food =[
         {
             name:"Tangelo",
             type:"Fruit",
+            amount:100,
             calories:53,
             protein:0,
             carbs:13,
@@ -402,6 +452,7 @@ const Food =[
         {
             name:"Tangerine",
             type:"Fruit",
+            amount:100,
             calories:53,
             protein:0,
             carbs:13,
@@ -410,6 +461,7 @@ const Food =[
         {
             name:"Watermelon",
             type:"Fruit",
+            amount:100,
             calories:30,
             protein:0,
             carbs:7,
@@ -418,6 +470,7 @@ const Food =[
         {
             name:"Yuzu",
             type:"Fruit",
+            amount:100,
             calories:29,
             protein:1,
             carbs:9,
@@ -426,6 +479,7 @@ const Food =[
         {
             name:"Acorn Squash",
             type:"Vegetable",
+            amount:100,
             calories:103,
             protein:0,
             carbs:16,
@@ -434,6 +488,7 @@ const Food =[
         {
             name:"Arrowroot",
             type:"Vegetable",
+            amount:100,
             calories:65,
             protein:4,
             carbs:13,
@@ -442,6 +497,7 @@ const Food =[
         {
             name:"Artichoke",
             type:"Vegetable",
+            amount:100,
             calories:209,
             protein:2,
             carbs:9,
@@ -450,6 +506,7 @@ const Food =[
         {
             name:"Arugula",
             type:"Vegetable",
+            amount:100,
             calories:25,
             protein:2,
             carbs:3,
@@ -458,6 +515,7 @@ const Food =[
         {
             name:"Asparagus",
             type:"Vegetable",
+            amount:100,
             calories:20,
             protein:2,
             carbs:3,
@@ -466,6 +524,7 @@ const Food =[
         {
             name:"Beet",
             type:"Vegetable",
+            amount:100,
             calories:43,
             protein:1,
             carbs:9,
@@ -474,6 +533,7 @@ const Food =[
         {
             name:"Beetroot",
             type:"Vegetable",
+            amount:100,
             calories:43,
             protein:1,
             carbs:9,
@@ -482,6 +542,7 @@ const Food =[
         {
             name:"Bell Peppers",
             type:"Vegetable",
+            amount:100,
             calories:31,
             protein:0,
             carbs:6,
@@ -490,6 +551,7 @@ const Food =[
         {
             name:"Black Eyed Pea",
             type:"Vegetable",
+            amount:100,
             calories:90,
             protein:2,
             carbs:18,
@@ -498,6 +560,7 @@ const Food =[
         {
             name:"Bok Choy",
             type:"Vegetable",
+            amount:100,
             calories:16,
             protein:1,
             carbs:3,
@@ -506,6 +569,7 @@ const Food =[
         {
             name:"Broccoli",
             type:"Vegetable",
+            amount:100,
             calories:34,
             protein:2,
             carbs:6,
@@ -514,6 +578,7 @@ const Food =[
         {
             name:"Brussel Sprouts",
             type:"Vegetable",
+            amount:100,
             calories:43,
             protein:3,
             carbs:8,
@@ -522,6 +587,7 @@ const Food =[
         {
             name:"Butternut Squash",
             type:"Vegetable",
+            amount:100,
             calories:45,
             protein:1,
             carbs:11,
@@ -530,6 +596,7 @@ const Food =[
         {
             name:"Cabbage",
             type:"Vegetable",
+            amount:100,
             calories:25,
             protein:1,
             carbs:5,
@@ -538,6 +605,7 @@ const Food =[
         {
             name:"Carrot",
             type:"Vegetable",
+            amount:100,
             calories:41,
             protein:0,
             carbs:9,
@@ -546,6 +614,7 @@ const Food =[
         {
             name:"Cauliflower",
             type:"Vegetable",
+            amount:100,
             calories:25,
             protein:1,
             carbs:4,
@@ -554,6 +623,7 @@ const Food =[
         {
             name:"Celery",
             type:"Vegetable",
+            amount:100,
             calories:16,
             protein:0,
             carbs:2,
@@ -562,6 +632,7 @@ const Food =[
         {
             name:"Chick Pea",
             type:"Vegetable",
+            amount:100,
             calories:180,
             protein:10,
             carbs:30,
@@ -570,6 +641,7 @@ const Food =[
         {
             name:"Chives",
             type:"Vegetable",
+            amount:100,
             calories:30,
             protein:3,
             carbs:4,
@@ -578,6 +650,7 @@ const Food =[
         {
             name:"Collard Greens",
             type:"Vegetable",
+            amount:100,
             calories:32,
             protein:3,
             carbs:5,
@@ -586,6 +659,7 @@ const Food =[
         {
             name:"Daikon",
             type:"Vegetable",
+            amount:100,
             calories:18,
             protein:0,
             carbs:4,
@@ -594,6 +668,7 @@ const Food =[
         {
             name:"Fava Bean",
             type:"Vegetable",
+            amount:100,
             calories:71,
             protein:5,
             carbs:12,
@@ -602,6 +677,7 @@ const Food =[
         {
             name:"Garbanzo Bean",
             type:"Vegetable",
+            amount:100,
             calories:180,
             protein:10,
             carbs:30,
@@ -610,6 +686,7 @@ const Food =[
         {
             name:"Garlic",
             type:"Vegetable",
+            amount:100,
             calories:149,
             protein:6,
             carbs:33,
@@ -618,6 +695,7 @@ const Food =[
         {
             name:"Ginger",
             type:"Vegetable",
+            amount:100,
             calories:80,
             protein:1,
             carbs:17,
@@ -626,6 +704,7 @@ const Food =[
         {
             name:"Green Beans",
             type:"Vegetable",
+            amount:100,
             calories:31,
             protein:1,
             carbs:6,
@@ -634,6 +713,7 @@ const Food =[
         {
             name:"Horseradish",
             type:"Vegetable",
+            amount:100,
             calories:48,
             protein:1,
             carbs:11,
@@ -642,6 +722,7 @@ const Food =[
         {
             name:"Kale",
             type:"Vegetable",
+            amount:100,
             calories:49,
             protein:4,
             carbs:8,
@@ -650,6 +731,7 @@ const Food =[
         {
             name:"Leek",
             type:"Vegetable",
+            amount:100,
             calories:61,
             protein:1,
             carbs:14,
@@ -658,6 +740,7 @@ const Food =[
         {
             name:"Lemongrass",
             type:"Vegetable",
+            amount:100,
             calories:99,
             protein:1,
             carbs:25,
@@ -666,6 +749,7 @@ const Food =[
         {
             name:"Lentil",
             type:"Vegetable",
+            amount:100,
             calories:116,
             protein:9,
             carbs:20,
@@ -674,6 +758,7 @@ const Food =[
         {
             name:"Lettuce",
             type:"Vegetable",
+            amount:100,
             calories:13,
             protein:1,
             carbs:2,
@@ -682,6 +767,7 @@ const Food =[
         {
             name:"Lima Bean",
             type:"Vegetable",
+            amount:100,
             calories:79,
             protein:4,
             carbs:14,
@@ -690,6 +776,7 @@ const Food =[
         {
             name:"Mung Bean Sprout",
             type:"Vegetable",
+            amount:100,
             calories:30,
             protein:3,
             carbs:5,
@@ -698,6 +785,7 @@ const Food =[
         {
             name:"Mushrooms",
             type:"Vegetable",
+            amount:100,
             calories:35,
             protein:5,
             carbs:5,
@@ -706,6 +794,7 @@ const Food =[
         {
             name:"Portobello Mushrooms",
             type:"Vegetable",
+            amount:100,
             calories:17,
             protein:1,
             carbs:5,
@@ -714,6 +803,7 @@ const Food =[
         {
             name:"Shiitake Mushrooms",
             type:"Vegetable",
+            amount:100,
             calories:56,
             protein:3,
             carbs:10,
@@ -722,6 +812,7 @@ const Food =[
         {
             name:"Mustard Greens",
             type:"Vegetable",
+            amount:100,
             calories:27,
             protein:2,
             carbs:4,
@@ -730,6 +821,7 @@ const Food =[
         {
             name:"Okra",
             type:"Vegetable",
+            amount:100,
             calories:33,
             protein:1,
             carbs:7,
@@ -738,6 +830,7 @@ const Food =[
         {
             name:"Onion",
             type:"Vegetable",
+            amount:100,
             calories:40,
             protein:1,
             carbs:9,
@@ -746,6 +839,7 @@ const Food =[
         {
             name:"Parsnip",
             type:"Vegetable",
+            amount:100,
             calories:75,
             protein:1,
             carbs:17,
@@ -754,6 +848,7 @@ const Food =[
         {
             name:"Peas",
             type:"Vegetable",
+            amount:100,
             calories:58,
             protein:3,
             carbs:10,
@@ -762,6 +857,7 @@ const Food =[
         {
             name:"Potato",
             type:"Vegetable",
+            amount:100,
             calories:77,
             protein:2,
             carbs:17,
@@ -770,6 +866,7 @@ const Food =[
         {
             name:"Pumpkin",
             type:"Vegetable",
+            amount:100,
             calories:34,
             protein:1,
             carbs:8,
@@ -778,6 +875,7 @@ const Food =[
         {
             name:"Radish",
             type:"Vegetable",
+            amount:100,
             calories:16,
             protein:0,
             carbs:3,
@@ -786,6 +884,7 @@ const Food =[
         {
             name:"Rutabaga",
             type:"Vegetable",
+            amount:100,
             calories:37,
             protein:1,
             carbs:8,
@@ -794,6 +893,7 @@ const Food =[
         {
             name:"Shallot",
             type:"Vegetable",
+            amount:100,
             calories:72,
             protein:2,
             carbs:16,
@@ -802,6 +902,7 @@ const Food =[
         {
             name:"Snap Pea",
             type:"Vegetable",
+            amount:100,
             calories:42,
             protein:2,
             carbs:7,
@@ -810,6 +911,7 @@ const Food =[
         {
             name:"Snow Pea",
             type:"Vegetable",
+            amount:100,
             calories:42,
             protein:2,
             carbs:7,
@@ -818,6 +920,7 @@ const Food =[
         {
             name:"Soybean",
             type:"Vegetable",
+            amount:100,
             calories:122,
             protein:10,
             carbs:9,
@@ -826,6 +929,7 @@ const Food =[
         {
             name:"Spinach",
             type:"Vegetable",
+            amount:100,
             calories:23,
             protein:2,
             carbs:3,
@@ -834,6 +938,7 @@ const Food =[
         {
             name:"Scallion",
             type:"Vegetable",
+            amount:100,
             calories:32,
             protein:1,
             carbs:7,
@@ -842,6 +947,7 @@ const Food =[
         {
             name:"Summer Squash",
             type:"Vegetable",
+            amount:100,
             calories:16,
             protein:1,
             carbs:3,
@@ -850,6 +956,7 @@ const Food =[
         {
             name:"Swede",
             type:"Vegetable",
+            amount:100,
             calories:37,
             protein:1,
             carbs:8,
@@ -858,6 +965,7 @@ const Food =[
         {
             name:"Sweet Potato",
             type:"Vegetable",
+            amount:100,
             calories:86,
             protein:1,
             carbs:20,
@@ -866,6 +974,7 @@ const Food =[
         {
             name:"Taro",
             type:"Vegetable",
+            amount:100,
             calories:112,
             protein:1,
             carbs:26,
@@ -874,6 +983,7 @@ const Food =[
         {
             name:"Tomatillo",
             type:"Vegetable",
+            amount:100,
             calories:32,
             protein:0,
             carbs:5,
@@ -882,6 +992,7 @@ const Food =[
         {
             name:"Tomato",
             type:"Vegetable",
+            amount:100,
             calories:18,
             protein:0,
             carbs:3,
@@ -890,6 +1001,7 @@ const Food =[
         {
             name:"Turnip",
             type:"Vegetable",
+            amount:100,
             calories:28,
             protein:0,
             carbs:6,
@@ -898,6 +1010,7 @@ const Food =[
         {
             name:"Wasabi",
             type:"Vegetable",
+            amount:100,
             calories:109,
             protein:4,
             carbs:23,
@@ -906,6 +1019,7 @@ const Food =[
         {
             name:"Watercress",
             type:"Vegetable",
+            amount:100,
             calories:11,
             protein:2,
             carbs:1,
@@ -914,6 +1028,7 @@ const Food =[
         {
             name:"Wheatgrass",
             type:"Vegetable",
+            amount:100,
             calories:16,
             protein:1,
             carbs:3,
@@ -922,6 +1037,7 @@ const Food =[
         {
             name:"Winter Squash",
             type:"Vegetable",
+            amount:100,
             calories:34,
             protein:0,
             carbs:8,
@@ -930,6 +1046,7 @@ const Food =[
         {
             name:"Yam",
             type:"Vegetable",
+            amount:100,
             calories:118,
             protein:1,
             carbs:27,
@@ -938,6 +1055,7 @@ const Food =[
         {
             name:"Yuca Root",
             type:"Vegetable",
+            amount:100,
             calories:160,
             protein:1,
             carbs:38,
@@ -946,6 +1064,7 @@ const Food =[
         {
             name:"Zucchini",
             type:"Vegetable",
+            amount:100,
             calories:21,
             protein:2,
             carbs:3,
@@ -954,6 +1073,7 @@ const Food =[
         {
             name:"Barley",
             type:"Grain",
+            amount:100,
             calories:122,
             protein:2,
             carbs:28,
@@ -962,6 +1082,7 @@ const Food =[
         {
             name:"Brown Rice",
             type:"Grain",
+            amount:100,
             calories:110,
             protein:3,
             carbs:23,
@@ -970,6 +1091,7 @@ const Food =[
         {
             name:"Bulgur",
             type:"Grain",
+            amount:100,
             calories:83,
             protein:4,
             carbs:19,
@@ -978,6 +1100,7 @@ const Food =[
         {
             name:"Corn",
             type:"Grain",
+            amount:100,
             calories:124,
             protein:3,
             carbs:24,
@@ -986,6 +1109,7 @@ const Food =[
         {
             name:"Cream of Rice",
             type:"Grain",
+            amount:100,
             calories:127,
             protein:2,
             carbs:28,
@@ -994,6 +1118,7 @@ const Food =[
         {
             name:"Cream of Wheat",
             type:"Grain",
+            amount:100,
             calories:112,
             protein:4,
             carbs:23,
@@ -1002,6 +1127,7 @@ const Food =[
         {
             name:"Farro",
             type:"Grain",
+            amount:100,
             calories:127,
             protein:5,
             carbs:26,
@@ -1010,6 +1136,7 @@ const Food =[
         {
             name:"Grits",
             type:"Grain",
+            amount:100,
             calories:111,
             protein:3,
             carbs:24,
@@ -1018,6 +1145,7 @@ const Food =[
         {
             name:"Oats",
             type:"Grain",
+            amount:100,
             calories:62,
             protein:3,
             carbs:11,
@@ -1026,6 +1154,7 @@ const Food =[
         {
             name:"Quinoa",
             type:"Grain",
+            amount:100,
             calories:143,
             protein:5,
             carbs:26,
@@ -1034,6 +1163,7 @@ const Food =[
         {
             name:"Rice",
             type:"Grain",
+            amount:100,
             calories:129,
             protein:3,
             carbs:28,
@@ -1042,6 +1172,7 @@ const Food =[
         {
             name:"Ground Beef 80/20",
             type:"Meat",
+            amount:100,
             calories:260,
             protein:26,
             carbs:0,
@@ -1050,6 +1181,7 @@ const Food =[
         {
             name:"Ground Beef 85/15",
             type:"Meat",
+            amount:100,
             calories:244,
             protein:26,
             carbs:0,
@@ -1058,6 +1190,7 @@ const Food =[
         {
             name:"Ground Beef 90/10",
             type:"Meat",
+            amount:100,
             calories:216,
             protein:27,
             carbs:0,
@@ -1066,6 +1199,7 @@ const Food =[
         {
             name:"Ground Beef 95/5",
             type:"Meat",
+            amount:100,
             calories:176,
             protein:27,
             carbs:0,
@@ -1074,6 +1208,7 @@ const Food =[
         {
             name:"Beef Sirloin",
             type:"Meat",
+            amount:100,
             calories:206,
             protein:26,
             carbs:0,
@@ -1082,6 +1217,7 @@ const Food =[
         {
             name:"Beef Tenderloin",
             type:"Meat",
+            amount:100,
             calories:202,
             protein:24,
             carbs:0,
@@ -1090,6 +1226,7 @@ const Food =[
         {
             name:"Beef Ribeye",
             type:"Meat",
+            amount:100,
             calories:253,
             protein:18,
             carbs:0,
@@ -1098,6 +1235,7 @@ const Food =[
         {
             name:"Beef New York Strip",
             type:"Meat",
+            amount:100,
             calories:225,
             protein:20,
             carbs:0,
@@ -1106,6 +1244,7 @@ const Food =[
         {
             name:"Chicken Breast",
             type:"Meat",
+            amount:100,
             calories:165,
             protein:31,
             carbs:0,
@@ -1114,6 +1253,7 @@ const Food =[
         {
             name:"Chicken Thigh Skinless",
             type:"Meat",
+            amount:100,
             calories:207,
             protein:26,
             carbs:0,
@@ -1122,6 +1262,7 @@ const Food =[
         {
             name:"Chicken Leg Skinless",
             type:"Meat",
+            amount:100,
             calories:189,
             protein:27,
             carbs:0,
@@ -1130,6 +1271,7 @@ const Food =[
         {
             name:"Turkey Breast",
             type:"Meat",
+            amount:100,
             calories:135,
             protein:30,
             carbs:0,
@@ -1138,6 +1280,7 @@ const Food =[
         {
             name:"Pork Tenderloin",
             type:"Meat",
+            amount:100,
             calories:171,
             protein:25,
             carbs:0,
@@ -1146,6 +1289,7 @@ const Food =[
         {
             name:"Lean Ham",
             type:"Meat",
+            amount:100,
             calories:110,
             protein:17,
             carbs:0,
@@ -1154,6 +1298,7 @@ const Food =[
         {
             name:"Catfish",
             type:"Fish",
+            amount:100,
             calories:144,
             protein:18,
             carbs:0,
@@ -1162,6 +1307,7 @@ const Food =[
         {
             name:"Carp",
             type:"Fish",
+            amount:100,
             calories:162,
             protein:22,
             carbs:0,
@@ -1170,6 +1316,7 @@ const Food =[
         {
             name:"Cod",
             type:"Fish",
+            amount:100,
             calories:105,
             protein:22,
             carbs:0,
@@ -1178,6 +1325,7 @@ const Food =[
         {
             name:"Halibut",
             type:"Fish",
+            amount:100,
             calories:111,
             protein:22,
             carbs:0,
@@ -1186,6 +1334,7 @@ const Food =[
         {
             name:"Monkfish",
             type:"Fish",
+            amount:100,
             calories:97,
             protein:18,
             carbs:0,
@@ -1194,6 +1343,7 @@ const Food =[
         {
             name:"Oysters Canned",
             type:"Fish",
+            amount:100,
             calories:68,
             protein:7,
             carbs:3,
@@ -1202,6 +1352,7 @@ const Food =[
         {
             name:"Salmon",
             type:"Fish",
+            amount:100,
             calories:139,
             protein:24,
             carbs:0,
@@ -1210,6 +1361,7 @@ const Food =[
         {
             name:"Sea Bass",
             type:"Fish",
+            amount:100,
             calories:152,
             protein:23,
             carbs:0,
@@ -1218,6 +1370,7 @@ const Food =[
         {
             name:"Shrimp",
             type:"Fish",
+            amount:100,
             calories:138,
             protein:27,
             carbs:1,
@@ -1226,6 +1379,7 @@ const Food =[
         {
             name:"Snapper",
             type:"Fish",
+            amount:100,
             calories:128,
             protein:26,
             carbs:0,
@@ -1234,6 +1388,7 @@ const Food =[
         {
             name:"Tilapia",
             type:"Fish",
+            amount:100,
             calories:125,
             protein:17,
             carbs:0,
@@ -1242,6 +1397,7 @@ const Food =[
         {
             name:"Trout",
             type:"Fish",
+            amount:100,
             calories:150,
             protein:19,
             carbs:0,
@@ -1250,6 +1406,7 @@ const Food =[
         {
             name:"Tuna",
             type:"Fish",
+            amount:100,
             calories:165,
             protein:22,
             carbs:0,
@@ -1258,6 +1415,7 @@ const Food =[
         {
             name:"Almond",
             type:"Nuts",
+            amount:100,
             calories:579,
             protein:21,
             carbs:21,
@@ -1266,6 +1424,7 @@ const Food =[
         {
             name:"Brazil Nut",
             type:"Nuts",
+            amount:100,
             calories:659,
             protein:14,
             carbs:11,
@@ -1274,6 +1433,7 @@ const Food =[
         {
             name:"Cashew",
             type:"Nuts",
+            amount:100,
             calories:553,
             protein:18,
             carbs:30,
@@ -1282,6 +1442,7 @@ const Food =[
         {
             name:"Hazelnut",
             type:"Nuts",
+            amount:100,
             calories:628,
             protein:14,
             carbs:16,
@@ -1290,6 +1451,7 @@ const Food =[
         {
             name:"Macadamia Nut",
             type:"Nuts",
+            amount:100,
             calories:718,
             protein:7,
             carbs:13,
@@ -1298,6 +1460,7 @@ const Food =[
         {
             name:"Peanuts",
             type:"Nuts",
+            amount:100,
             calories:567,
             protein:25,
             carbs:16,
@@ -1306,6 +1469,7 @@ const Food =[
         {
             name:"Pecan",
             type:"Nuts",
+            amount:100,
             calories:691,
             protein:9,
             carbs:13,
@@ -1314,6 +1478,7 @@ const Food =[
         {
             name:"Pistachio",
             type:"Nuts",
+            amount:100,
             calories:562,
             protein:20,
             carbs:27,
@@ -1322,6 +1487,7 @@ const Food =[
         {
             name:"Walnut",
             type:"Nuts",
+            amount:100,
             calories:654,
             protein:15,
             carbs:13,
