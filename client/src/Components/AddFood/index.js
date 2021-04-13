@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 import API from '../../Utils/API';
+import axios from 'axios';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +59,19 @@ export default function AddFood() {
   const [protein, setProtein] = useState();
   const [carbs, setCarbs] = useState();
   const [fat, setFat] = useState();
+  const [userId, setUserId] = useState([]);
+
+ useEffect(() => {
+   loadUserId()
+ }, [])
+
+ function loadUserId () {
+   axios.get('/api/user').then(response => {
+     console.log("look at this")
+     console.log(response.data)
+     setUserId(response.data.user._id)
+   })
+ }
 
   function handleName (event) {
       setName(event.target.value)
@@ -81,6 +95,7 @@ export default function AddFood() {
   function SaveFood (event) {
       event.preventDefault();
       API.saveFood ({
+          userId: userId,
           name: name,
           amount: amount,
           calories: calories,
