@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
@@ -23,8 +24,7 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(2),
       padding: theme.spacing(1),
-      width: theme.spacing('auto'),
-      height: theme.spacing('auto'),
+      
     },
     justifyContent: "center",
     padding: theme.spacing(8, 0, 8),
@@ -231,8 +231,9 @@ function CustomSelector (){
 }
 
   return (
-    <Container className={classes.root}>
+    <Container component="main" className={classes.root}>
       <Paper elevation={3} className={classes.content}>
+      <CssBaseline />
         <Avatar className={classes.avatar}>
           <MenuBookIcon />
         </Avatar>

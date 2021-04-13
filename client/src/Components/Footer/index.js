@@ -20,7 +20,7 @@ function Footer() {
       <AppBar position="fixed" color="primary" className={classes.appBar}>
         <Toolbar align="center">
           <Typography >
-            Created By: Team Name
+            Created By: 3D Crew
           </Typography>       
         </Toolbar>
       </AppBar>

@@ -18,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(2),
       padding: theme.spacing(1),
-      width: theme.spacing('auto'),
-      height: theme.spacing('auto'),
     },
     justifyContent: "center",
     padding: theme.spacing(8, 0, 8),

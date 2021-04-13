@@ -1,12 +1,6 @@
 import axios from "axios"
 export default {
-    //Coach
-    getUser: function(id) {
-        return axios.get("/api/coach/" + id);
-    },
-    saveUser: function(coachData) {
-        return axios.post("/api/coach", coachData);
-    },
+    
     //Meals
     getMeals: function() {
         return axios.get("/api/meal");

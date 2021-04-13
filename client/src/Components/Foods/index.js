@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import List from '@material-ui/core/List';
@@ -507,7 +508,8 @@ function Fish(){
   
     return (
       <Container className={classes.root}>
-        <Paper elevation={3} gutterBottom className={classes.paper}>
+        <Paper elevation={3} className={classes.paper}>
+        <CssBaseline />
           <div className={classes.content}>
           <Typography className={classes.title} >
               Ingredient List

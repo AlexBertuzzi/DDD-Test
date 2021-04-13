@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -93,6 +94,7 @@ export default function MealCard() {
 if (meal.length > 0){
   return ( 
     <Container component="main" maxWidth="md" className={classes.root}>
+        <CssBaseline />
         {meal.map(meal => (
         <Card className={classes.card}>
             <CardContent>

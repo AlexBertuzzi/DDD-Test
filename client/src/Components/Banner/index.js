@@ -62,7 +62,7 @@ function Banner () {
         <Toolbar>
           <Typography variant="h6" className={classes.title} link="/viewMeals">
               <Link href="/viewMeals" color="inherit" >
-                Daily Diet Directory
+                Daily-Diet-Directory
               </Link>
           </Typography>
             <div>
