@@ -140,6 +140,7 @@ if (meal.length > 0){
     else {
         return(
             <Container component="main" maxWidth="xs" className={classes.root}>
+                <CssBaseline />
                 <Card className={classes.card}>
                 <CardContent>
                     <Typography className={classes.title}>
