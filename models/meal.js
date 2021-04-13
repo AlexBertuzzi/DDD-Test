@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const newMeal = new Schema({
-    userId: {type: String},
     title: {type: String},
     foods: [{
         name: {type: String},
