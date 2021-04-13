@@ -47,19 +47,19 @@ This project allows a user to have access to a database of nutritional informati
 
 ## Demo
 
-![](./assets/Screenshot(6).png)
+![](./assets/pic1.png)
 
-![](./assets/Screenshot(34).png)
+![](./assets/pic2.png)
 
-![](./assets/Screenshot(8).png)
+![](./assets/pic3.png)
 
-![](./assets/Screenshot(33).png)
+![](./assets/pic4.png)
 
-![](./assets/Screenshot(35).png)
+![](./assets/pic5.png)
 
-![](./assets/Screenshot(32).png)
+![](./assets/pic6.png)
 
-![](./assets/Screenshot(36).png)
+![](./assets/pic7.png)
 
 
 ## Issues Faced
