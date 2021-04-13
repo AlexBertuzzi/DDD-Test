@@ -43,9 +43,7 @@ router.post('/login',
             name: req.user.name
         };
         res.send(userInfo);
-    }
-    
-    
+    }    
 )
 
 router.get('/', (req, res, next) => {
