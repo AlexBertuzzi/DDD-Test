@@ -180,10 +180,10 @@ function handleDataObject(event) {
            {
            name: dataObject[i].name,
            amount: amountObject[i],
-           calories: dataObject[i].calories/100 * amountObject[i],
-           protein: dataObject[i].protein/100 * amountObject[i],
-           carbs: dataObject[i].carbs/100 * amountObject[i],
-           fat: dataObject[i].fat/100 * amountObject[i]
+           calories: dataObject[i].calories/dataObject[i].amount * amountObject[i],
+           protein: dataObject[i].protein/dataObject[i].amount * amountObject[i],
+           carbs: dataObject[i].carbs/dataObject[i].amount * amountObject[i],
+           fat: dataObject[i].fat/dataObject[i].amount * amountObject[i]
            }
          foodsToSave.push(foodStuff)
     }
