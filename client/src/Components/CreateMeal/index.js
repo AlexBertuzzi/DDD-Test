@@ -16,7 +16,6 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -98,19 +97,6 @@ export default function CreateMealPlan() {
  const [dataObject, setDataObject] = useState([]);
  const [note, setNote] = useState({});
  const [custom, setCustom] = useState([]);
- const [userId, setUserId] = useState([]);
-
- useEffect(() => {
-   loadUserId()
- }, [])
-
- function loadUserId () {
-   axios.get('/api/user').then(response => {
-     console.log("look at this")
-     console.log(response.data)
-     setUserId(response.data.user._id)
-   })
- }
 
  useEffect(() => {
   loadCustom()
@@ -203,7 +189,6 @@ function handleDataObject(event) {
     }
 
   mealToSave = {
-    userId: userId,
     title: title,
     foods: foodsToSave,
     notes: note
