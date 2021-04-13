@@ -77,20 +77,6 @@ export default function MealCard() {
         .res(window.location.href="/viewMeals")
   }
 
-  function total(items) {
-      console.log(items)
-      let array =[]
-      array.push(items)
-      console.log(array)
-      let number = 0;
-       for (let i = 0; i < array.length; i++){
-              number += array[i];
-           }
-         return (number)
-      
-
- }
-
 if (meal.length > 0){
   return ( 
     <Container component="main" maxWidth="md" className={classes.root}>
@@ -131,11 +117,11 @@ if (meal.length > 0){
                             ))}
                             <TableRow>
                             <TableCell>Total:</TableCell>
-                            <TableCell align="right">{meal.foods.map(foods => (Math.round(total(foods.amount))))}&nbsp;(g)</TableCell>
-                            <TableCell align="right">{meal.foods.map(foods => (Math.round(total(foods.calories))))}</TableCell>
-                            <TableCell align="right">{meal.foods.map(foods => (Math.round(total(foods.protein))))}&nbsp;(g)</TableCell>
-                            <TableCell align="right">{meal.foods.map(foods => (Math.round(total(foods.carbs))))}&nbsp;(g)</TableCell>
-                            <TableCell align="right">{meal.foods.map(foods => (Math.round(total(foods.fat))))}&nbsp;(g)</TableCell>
+                            <TableCell align="right">{Math.round(meal.foods.reduce(function(total, arr){return total + arr.amount}, 0))}&nbsp;(g)</TableCell>
+                            <TableCell align="right">{Math.round(meal.foods.reduce(function(total, arr){return total + arr.calories}, 0))}</TableCell>
+                            <TableCell align="right">{Math.round(meal.foods.reduce(function(total, arr){return total + arr.protein}, 0))}&nbsp;(g)</TableCell>
+                            <TableCell align="right">{Math.round(meal.foods.reduce(function(total, arr){return total + arr.carbs}, 0))}&nbsp;(g)</TableCell>
+                            <TableCell align="right">{Math.round(meal.foods.reduce(function(total, arr){return total + arr.fat}, 0))}&nbsp;(g)</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
