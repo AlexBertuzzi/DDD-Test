@@ -37,8 +37,6 @@ function Banner () {
 
  function loadName () {
    axios.get('/api/user').then(response => {
-     console.log("look at this")
-     console.log(response.data)
      setName(response.data.user.name)
    })
  }

@@ -7,6 +7,28 @@ const newUser = new Schema({
     name: {type: String, required: true},
     email: {type: String, required: true},
     password: {type: String, requied: true},
+	meal: [{
+		userId: {type: String},
+		title: {type: String},
+		foods: [{
+			name: {type: String},
+			amount: {type: Number},
+			calories: {type: Number},
+			protein: {type: Number},
+			carbs: {type: Number},
+			fat: {type: Number}
+		}],
+		notes: {type: String}
+	}],
+	food: [{
+		userId: {type: String},
+		name: {type: String},
+    	amount: {type: Number},
+    	calories: {type: Number},
+    	protein: {type: Number},
+    	carbs: {type: Number},
+    	fat: {type: Number}
+	}]
 });
 
 newUser.methods = {

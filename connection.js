@@ -6,7 +6,12 @@ mongoose.Promise = global.Promise
 
 const uri = process.env.MONGODB_URI || "mongodb://localhost/Daily-Diet-Directory"
 
-mongoose.connect(uri).then(
+mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }).then(
     () => { 
         /** ready to use. The `mongoose.connect()` promise resolves to undefined. */ 
         console.log('Connected to Mongo');

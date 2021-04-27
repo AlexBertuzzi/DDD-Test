@@ -9,7 +9,9 @@ const newUser = [
     {
      name: "Test User",
      email: "test@email.com",
-     password: "test"   
+     password: "test",
+     meal: [],
+     food: [],   
     }
 ];
 
@@ -24,58 +26,3 @@ db.User
         console.error(err);
         process.exit(1);
     });
-
-const newMeal = [{
-    title: "Test Meal",
-    foods: [{
-        name: "Chicken Breast",
-        amount: 150,
-        calories: 1234,
-        protein: 123,
-        carbs: 0,
-        fat: 12
-    },
-    {
-        name: "Rice",
-        amount: 200,
-        calories: 2345,
-        protein: 0,
-        carbs: 200,
-        fat: 0
-    }
-],
-    notes: "These are the Notes"
-}];
-    
-    db.Meal
-        .remove({})
-        .then(() => db.Meal.collection.insertMany(newMeal))
-        .then(data => {
-            console.log(data.result.n  + "data inserted!");
-            process.exit(0);
-        })
-        .catch(err => {
-            console.error(err);
-            process.exit(1);
-        });
-
-const newFood = [{
-    name: "Love",
-    amount: 100,
-    calories: 400,
-    protein: 60,
-    carbs: 40,
-    fat: 0
-}]
-           
-    db.Food
-        .remove({})
-        .then(() => db.Food.collection.insertMany(newFood))
-        .then(data => {
-            console.log(data.result.n  + "data inserted!");
-            process.exit(0);
-        })
-        .catch(err => {
-            console.error(err);
-            process.exit(1);
-        });

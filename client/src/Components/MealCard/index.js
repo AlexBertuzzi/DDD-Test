@@ -25,9 +25,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(2),
-      padding: theme.spacing(1),
-      width: theme.spacing('auto'),
-      height: theme.spacing('auto'),
+      padding: theme.spacing(1)
       },
     justifyContent: "center",
     padding: theme.spacing(8, 0, 8),
@@ -64,14 +62,13 @@ export default function MealCard() {
   function loadMeals() {
       API.getMeals()
           .then(res =>
-              setMeals(res.data)
+              setMeals(res.data.meal)
               )
-              .then(console.log(meal))
               .catch(err => console.log(err))
   };
 
-  function deleteMeal(id) {
-      API.deleteMeal(id)
+  function deleteMeal(req) {
+      API.deleteMeal(req)
         .then(res => loadMeals())
         .catch(err => console.log(err))
         .res(window.location.href="/viewMeals")

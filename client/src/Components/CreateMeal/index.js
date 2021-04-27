@@ -16,6 +16,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
+import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -97,6 +98,19 @@ export default function CreateMealPlan() {
  const [dataObject, setDataObject] = useState([]);
  const [note, setNote] = useState({});
  const [custom, setCustom] = useState([]);
+ const [id, setId] = useState([]);
+
+ useEffect(() => {
+   loadId()
+ }, [])
+ 
+ function loadId () {
+   axios.get('/api/user').then(response => {
+     console.log("look at this")
+     console.log(response.data)
+     setId(response.data.user._id)
+   })
+ }
 
  useEffect(() => {
   loadCustom()
@@ -105,7 +119,7 @@ export default function CreateMealPlan() {
 function loadCustom() {
   API.getFoods()
   .then(res =>
-      setCustom(res.data)
+      setCustom(res.data.food)
       )
       .catch(err => console.log(err));
 };
@@ -121,11 +135,11 @@ function loadCustom() {
   },
  };
   
+ const names = Food.map(a => a.name);
+
  function handleTitleChange(event) {
    setTitle(event.target.value)
  };
-
-const names = Food.map(a => a.name);
 
 const handleChange = (event) => {
   setIngredient(event.target.value);
@@ -189,6 +203,7 @@ function handleDataObject(event) {
     }
 
   mealToSave = {
+    id: id,
     title: title,
     foods: foodsToSave,
     notes: note

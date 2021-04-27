@@ -24,9 +24,7 @@ const useStyles = makeStyles((theme) => ({
       flexWrap: 'wrap',
       '& > *': {
         margin: theme.spacing(2),
-        padding: theme.spacing(1),
-        width: theme.spacing('auto'),
-        height: theme.spacing('auto'),
+        padding: theme.spacing(1)
       },
       justifyContent: "center",
       padding: theme.spacing(8, 0, 8),
@@ -65,23 +63,23 @@ const useStyles = makeStyles((theme) => ({
     const classes = useStyles();
     const [custom, setCustom] = useState([]);
 
-    useEffect(() => {
-        loadCustom()
-    }, [])
+useEffect(() => {
+    loadCustom()
+  }, [])
 
     function loadCustom() {
         API.getFoods()
         .then(res =>
-            setCustom(res.data)
+            setCustom(res.data.food)
             )
             .catch(err => console.log(err));
     };
 
-    function handleDelete(id) {
-        API.deleteFood(id)
+    function handleDelete(req) {
+        API.deleteFood(req)
           .then(res => loadCustom())
           .catch(err => console.log(err))
-          .res(window.location.href="/ingredientList")
+         .res(window.location.href="/ingredientList")
     }
 
       if (custom.length > 0){
@@ -109,8 +107,8 @@ const useStyles = makeStyles((theme) => ({
                         <TableRow>
                         
                         <TableCell component="th" scope="row">
-                            <IconButton color="secondary">
-                            <DeleteForeverIcon button onClick={() => handleDelete(custom._id)}/>
+                            <IconButton color="secondary" onClick={() => handleDelete(custom._id)}>
+                            <DeleteForeverIcon />
                             </IconButton>
                             {custom.name}
                         </TableCell>
