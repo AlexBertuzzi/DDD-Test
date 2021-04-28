@@ -7,7 +7,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 
-const drawerWidth = "15%";
+const drawerWidth = "17%";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -50,19 +50,19 @@ function SideBar() {
               <Divider />
               <ListItem button onClick={() => window.location.href="/createMeal"}>
                 <ListItemText primary =
-                  "Create New Meal">
+                  "Add New Meal">
                 </ListItemText>
               </ListItem>
               <Divider />
               <ListItem button onClick={() => window.location.href="/ingredientList"}>
                 <ListItemText primary =
-                  "Ingredient List">
+                  "Food List">
                 </ListItemText>
               </ListItem>
               <Divider />
               <ListItem button onClick={() => window.location.href="/createIngredient"}>
                 <ListItemText primary =
-                  "Add New Ingredient">
+                  "Add New Food">
                 </ListItemText>
               </ListItem>
               <Divider />

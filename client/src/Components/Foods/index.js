@@ -28,14 +28,18 @@ const useStyles = makeStyles((theme) => ({
       },
       justifyContent: "center",
       padding: theme.spacing(8, 0, 8),
+      width: "100%"
     },
     content: {
-      margin: "5%",
+        margin: "5%",
     },
     paper: {
+        marginRight: "3%",
         marginLeft: "20%",
-        marginRight: "5%"
-        
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: "center",
+        width:"80%"
     },
     title: {
       textAlign: 'center',
@@ -86,7 +90,7 @@ useEffect(() => {
           return (
             <div className={classes.content}>
             <Typography className={classes.heading}>
-            Custom Ingredients
+            Custom Foods
             </Typography>
             <List >
             <ListItem>
@@ -94,7 +98,7 @@ useEffect(() => {
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -131,7 +135,7 @@ useEffect(() => {
                 className={classes.submit}
                 href="/createIngredient"
                 >
-                Create Custom Ingreident
+                Add New Food
                 </Button>
         </div>
           )}
@@ -139,7 +143,7 @@ useEffect(() => {
             return (
                 <div className={classes.content}>
             <Typography className={classes.heading}>
-            No Custom Ingredients made yet.
+            No Custom Foods added yet.
             </Typography>
             <Button
                 type="submit"
@@ -148,10 +152,8 @@ useEffect(() => {
                 className={classes.submit}
                 href="/createIngredient"
               >
-                Create Custom Ingreident
+                Add New Food
             </Button>
-            
-            
         </div>
             )
         }
@@ -174,7 +176,7 @@ useEffect(() => {
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -223,7 +225,7 @@ function Fruit(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -272,7 +274,7 @@ function Vegetables(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -321,7 +323,7 @@ function Nuts(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -370,7 +372,7 @@ function Grains(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -418,7 +420,7 @@ function Meat(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -467,7 +469,7 @@ function Fish(){
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Ingredient</TableCell>
+                        <TableCell>Food</TableCell>
                         <TableCell align="right">Amount&nbsp;(g)</TableCell>
                         <TableCell align="right">Calories</TableCell>
                         <TableCell align="right">Protein&nbsp;(g)</TableCell>
@@ -508,15 +510,13 @@ function Fish(){
       <Container className={classes.root}>
         <Paper elevation={3} className={classes.paper}>
         <CssBaseline />
-          <div className={classes.content}>
+          <Container className={classes.content}>
           <Typography className={classes.title} >
-              Ingredient List
+              Your Food Database
           </Typography>
            <Typography component="h2">
-              All ingredient data presented involving calories and macro nutrients are averages that have been rounded to the nearest whole number.
+              All food data presented involving calories and macro nutrients are averages that have been rounded to the nearest whole number.
           </Typography> 
-          </div>
-          <Container>
             <Custom />
             <Oil />     
             <Fruit /> 

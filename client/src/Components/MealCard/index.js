@@ -29,8 +29,14 @@ const useStyles = makeStyles((theme) => ({
       },
     justifyContent: "center",
     padding: theme.spacing(8, 0, 8),
-    marginRight: "5%",
+    alignItems: "center"
+  },
+  content: {
+    marginRight: "3%",
     marginLeft: "20%",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: "center",
   },
   title: {
     textAlign: 'center',
@@ -46,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: 325,
     padding: "2.5%",
-    margin: "10px",
+    margin: "2.5%",
     flexGrow: 1
   },
 }));
@@ -77,6 +83,7 @@ export default function MealCard() {
 if (meal.length > 0){
   return ( 
     <Container component="main" maxWidth="md" className={classes.root}>
+        <Container className={classes.content}>
         <CssBaseline />
         {meal.map(meal => (
         <Card className={classes.card}>
@@ -131,12 +138,14 @@ if (meal.length > 0){
             </CardContent>
         </Card>
         ))}
+        </Container>
     </Container>
     )
 }
     else {
         return(
             <Container component="main" maxWidth="xs" className={classes.root}>
+              <Container className={classes.content}>
                 <CssBaseline />
                 <Card className={classes.card}>
                 <CardContent>
@@ -157,6 +166,7 @@ if (meal.length > 0){
                     </Button>
                 </CardActions>
                 </Card>
+              </Container>
             </Container>
         )
     }

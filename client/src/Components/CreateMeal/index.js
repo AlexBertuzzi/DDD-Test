@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   content: {
-    marginRight: "5%",
+    marginRight: "3%",
     marginLeft: "20%",
     alignItems: "center",
     display: 'flex',
